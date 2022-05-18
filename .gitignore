@@ -184,3 +184,8 @@ config.yml
 
 #logs
 logs/**
+src/key/scratch_build.crt
+src/key/scratch_build.key
+src/key/server.crt
+src/key/server.key
+.DS_Store
