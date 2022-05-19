@@ -20,11 +20,9 @@ class SalesforceApiException(Exception):
 
 
 SALESFORCE_CREATED_DATE_QUERY = \
-    "SELECT+Id,EventType,CreatedDate,LogDate,LogFile+From+EventLogFile+Where+CreatedDate>={" \
-    "from_timestamp}+AND+CreatedDate<{to_timestamp}"
+    "SELECT+Id,EventType,CreatedDate,LogDate,LogFile+From+EventLogFile"
 SALESFORCE_LOG_DATE_QUERY = \
-    "SELECT+Id,EventType,CreatedDate,LogDate,LogFile+From+EventLogFile+Where+LogDate>={" \
-    "from_timestamp}+AND+LogDate<{to_timestamp}"
+    "SELECT+Id,EventType,CreatedDate,LogDate,LogFile+From+EventLogFile"
 
 
 def base64_url_encode(json_obj):

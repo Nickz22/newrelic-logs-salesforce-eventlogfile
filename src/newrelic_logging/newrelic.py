@@ -50,6 +50,8 @@ class NewRelic:
         try:
             r = session.post(cls.events_api_endpoint, data=payload,
                              headers=headers)
+            print("raw output")
+            print(vars(r.raw))
         except RequestException as e:
             raise NewRelicApiException(repr(e)) from e
         return r.status_code
