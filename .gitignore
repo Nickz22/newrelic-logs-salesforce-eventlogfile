@@ -189,3 +189,5 @@ src/key/scratch_build.key
 src/key/server.crt
 src/key/server.key
 .DS_Store
+src/key/server_ssh.key
+src/key/ssh.key
